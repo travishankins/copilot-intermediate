@@ -1,9 +1,21 @@
 {
   "servers": {
-    // Using OAuth (version 1.101 or greater)
+    // Option A: Using OAuth (version 1.101 or greater)
     "github": {
       "type": "http",
       "url": "https://api.githubcopilot.com/mcp/"
     }
+
+    // Option B: Using Personal Access Token (PAT)
+    // Uncomment the block below and comment out Option A above to use a PAT instead.
+    // Follow instructions at: https://github.com/github/github-mcp-server
+    //
+    // "github": {
+    //   "command": "npx",
+    //   "args": ["-y", "@modelcontextprotocol/server-github"],
+    //   "env": {
+    //     "GITHUB_PERSONAL_ACCESS_TOKEN": "<your-pat-here>"
+    //   }
+    // }
   }
 }

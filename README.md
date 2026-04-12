@@ -6,7 +6,7 @@ A professional photo gallery and portfolio application built with Next.js 15, Ty
 
 - All demo guides and examples are in the [`demos/`](demos/) folder.
 - For more information about each demo, refer to the [README](demos/README.md) file in the `demos/` directory.
-- To get started, check out the first demo [`features-demo.md`](demos/features-demo.md) for a walkthrough of gallery features and Copilot capabilities.
+- To get started, check out the first demo [`1-features-demo.md`](demos/1-features-demo.md) for a walkthrough of gallery features and Copilot capabilities.
 
 ### Creating a New Demo
 
@@ -38,6 +38,7 @@ The fastest way to get started is using GitHub Codespaces:
 4. Wait for the codespace to build and start
 
 The codespace will automatically:
+
 - Install all dependencies (`npm install`)
 - Start the development server (`npm run dev`)
 - Configure GitHub Copilot and essential VS Code extensions
