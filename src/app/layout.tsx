@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import Script from "next/script";
 import Link from "next/link";
 import { Camera } from "lucide-react";
 import { ThemeProvider } from "@/components/theme/ThemeProvider";
@@ -16,6 +17,10 @@ export const metadata: Metadata = {
   description: "A curated collection of photographs and creative works showcasing a personal portfolio.",
 };
 
+// Inline script that runs before React hydration to set the theme class,
+// preventing a flash of incorrect theme on first paint.
+const themeScript = `(function(){try{var t=localStorage.getItem("theme");if(t==="dark"||(t!=="light"&&window.matchMedia("(prefers-color-scheme: dark)").matches)){document.documentElement.classList.add("dark")}}catch(e){}})()`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -23,6 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <Script id="theme-init" strategy="beforeInteractive">{themeScript}</Script>
+      </head>
       <body
         className={`${geistSans.variable} antialiased`}
       >
