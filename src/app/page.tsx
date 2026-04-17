@@ -8,7 +8,7 @@ export default function Home() {
     <div className="page-gradient">
       {/* Hero Section */}
       <Hero 
-        title="Professional Photo Gallery & Portfolio" 
+        title="Travis' Photo Gallery" 
         description="Upload, organize, and share your photography with automatic optimization, tagging system, and client proofing capabilities."
       />
       
