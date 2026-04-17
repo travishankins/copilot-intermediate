@@ -13,7 +13,7 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Photo Gallery & Portfolio",
+  title: "Travis' Photo Gallery",
   description: "A curated collection of photographs and creative works showcasing a personal portfolio.",
 };
 
@@ -42,7 +42,7 @@ export default function RootLayout({
                 <Link href="/" className="flex items-center gap-2">
                   <Camera className="h-8 w-8 text-blue-600" />
                   <h1 className="text-2xl font-bold text-slate-900 dark:text-white">
-                    Portfolio Gallery
+                    Travis' Photo Gallery
                   </h1>
                 </Link>
                 <nav className="flex items-center gap-6">
